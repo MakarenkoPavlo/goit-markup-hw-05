@@ -8,12 +8,15 @@
     --primery-background-socials: rgba(255, 255, 255, 0.1);
     --secondery-background-socials: #31D0AA;
     --primery-bcg-modal: #FCFCFC;
+    
 
     --primery-text-color: #434455;
     --secondery-text-color: #8E8F99;
     --accenr-text-color: #E7E9FC;
     --text-white-color: #FFFFFF;  
     --border-header: #000000;
+    --checkbox-text: #757575;
+    --prymery-text-placeholder: rgba(117, 117, 117, 0.5);
 }
 
 body {
@@ -370,10 +373,11 @@ img {
 }
 .footer-content {
     display: flex;
-    gap: 120px;
+    /* gap: 120px; */
 }
 .footer-content-logo {
     max-width: 264px;
+    margin-right: 120px;
 }
 .footer-logo {
     color: var(--secondery-bcg-color);
@@ -390,7 +394,9 @@ img {
     line-height: 1.5;
     margin-top: 16px;
 }
-
+.footer-socials-content {
+    margin-right: 80px;
+}
 .footer-socials-text {
     font-weight: 500;
     font-size: 16px;
@@ -426,6 +432,40 @@ img {
 .footer-socials-link:hover,
 .footer-socials-link:focus {
     background-color: var(--secondery-background-socials);
+}
+.footer-form-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.footer-form-button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 24px;
+    color: var(--text-white-color);
+    background-color: var(--primery-brend-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: auto;
+    border: none;
+    transition:
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-button:hover,
+.footer-form-button:focus {
+    background-color: var(--active-btn-color);
+}
+.footer-button-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--backgrond-white-color);
 }
 /* Портфолио */
 
@@ -594,4 +634,112 @@ img {
 .modal-close:focus {
     background-color: var(--active-btn-color);
     fill: var(--backgrond-white-color);
+}
+.modal-form {
+    padding: 72px 24px 24px 24px;
+}
+.modal-title {
+    color: var(--primery-bcg-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+.form-info {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    margin-bottom: 16px;
+}
+.form-field {
+    flex-basis: 100%;
+}
+
+.form-label {
+    position: relative;
+    display: block;
+    color: var(--secondery-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+.form-input {
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 10px 0;
+    resize: none;
+    }
+.form-input::placeholder {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    color: var(--prymery-text-placeholder);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+.form-pryvacy-input {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.privacy-text {
+    color: var(--checkbox-text);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+.privacy-text-item {
+    color: var(--primery-brend-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+}
+.privacy-input {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.modal-button {
+    padding: 16px 32px;
+    min-width: 169px;
+    color: var(--text-white-color);
+    background: var(--primery-brend-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+    border: none;
+    transition:
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover,
+.modal-button:focus {
+    background-color: var(--active-btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
